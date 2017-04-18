@@ -36,7 +36,10 @@ public class Hour implements Parcelable {
     }
 
     public int getTemperature() {
-        return (int) Math.round(mTemperature);
+        int temperature = (int) Math.round(mTemperature);
+        //Convert from Fahrenheit to Celsius
+        temperature = (temperature - 32)*5/9;
+        return temperature ;
     }
 
     public void setTemperature(double temperature) {

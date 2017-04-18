@@ -18,6 +18,7 @@ public class Current {
     private double mPrecipChance;
     private String mSummary;
     private String mTimezone;
+    private String mLocationLabel;
 
     public String getIcon() {
         return mIcon;
@@ -36,7 +37,7 @@ public class Current {
     }
 
     public String getFormattedTime() {
-        SimpleDateFormat formatter = new SimpleDateFormat("h:mm a");
+        SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd MMMM");
         formatter.setTimeZone(TimeZone.getTimeZone(getTimezone()));
         Date dateTime = new Date(getTime() * 1000);
         String timeString = formatter.format(dateTime);
@@ -48,7 +49,10 @@ public class Current {
     }
 
     public int getTemperature() {
-        return (int) Math.round(mTemperature);
+        int temperature = (int) Math.round(mTemperature);
+        //Convert from Fahrenheit to Celsius
+        temperature = (temperature - 32)*5/9;
+        return temperature ;
     }
 
     public void setTemperature(double temperature) {
@@ -87,4 +91,13 @@ public class Current {
     public void setTimezone(String timezone) {
         mTimezone = timezone;
     }
+
+    public String getLocationLabel() {
+        return mLocationLabel;
+    }
+
+    public void setLocationLabel(String locationLabel) {
+        mLocationLabel = locationLabel;
+    }
+
 }

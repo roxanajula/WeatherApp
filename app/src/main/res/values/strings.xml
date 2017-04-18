@@ -5,4 +5,9 @@
     <string name="error_ok_button_text">OK</string>
     <string name="network_unavailable_message">Network is unavailable!</string>
     <string name="no_daily_forecast_data">There is no data to display</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to provide weather information based on your location.</string>
+    <string name="location_permission_denied">This app requires location permission. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Sunii\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
 </resources>

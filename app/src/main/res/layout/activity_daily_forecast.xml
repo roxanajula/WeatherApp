@@ -45,15 +45,4 @@
         android:textColor="#ffffff"
         android:textSize="30sp"/>
 
-    <TextView
-        android:id="@+id/locationLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:text="Alcatraz Island, CA"
-        android:textColor="#ffffffff"
-        android:textSize="18sp"/>
-
 </RelativeLayout>
