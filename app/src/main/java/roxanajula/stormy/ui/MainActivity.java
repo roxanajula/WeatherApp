@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements
 
     private Forecast mForecast;
 
-    @BindView(R.id.timeLabel) TextView mTimeLabel;
     @BindView(R.id.temperatureLabel) TextView mTemperatureLabel;
     @BindView(R.id.humidityValue) TextView mHumidityValue;
     @BindView(R.id.precipValue) TextView mPrecipValue;
@@ -178,7 +177,6 @@ public class MainActivity extends AppCompatActivity implements
     private void updateDisplay() {
         Current current = mForecast.getCurrent();
         mTemperatureLabel.setText(current.getTemperature() + "");
-        mTimeLabel.setText(current.getFormattedTime());
         mHumidityValue.setText(current.getHumidity() + "");
         mPrecipValue.setText(current.getPrecipChance() + "%");
         mSummaryLabel.setText(current.getSummary());

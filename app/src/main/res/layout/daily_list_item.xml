@@ -47,12 +47,12 @@
         android:id="@+id/temperatureLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/circleImageView"
         android:layout_alignBottom="@id/circleImageView"
         android:layout_alignLeft="@id/circleImageView"
         android:layout_alignRight="@id/circleImageView"
+        android:layout_alignTop="@+id/circleImageView"
         android:gravity="center"
-        android:textColor="#f25019"
+        android:textColor="#4B1248"
         tools:text="100"/>
 
 </RelativeLayout>

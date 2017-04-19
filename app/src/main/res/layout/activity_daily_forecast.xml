@@ -41,8 +41,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="This Week's Weather"
+        android:paddingBottom="20dp"
+        android:text="7 Day Weather Forecast"
         android:textColor="#ffffff"
-        android:textSize="30sp"/>
+        android:textSize="24sp"/>
 
 </RelativeLayout>
